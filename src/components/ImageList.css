@@ -1,0 +1,14 @@
+.image-list {
+  display: grid;
+  /* 1fr means equal size */
+  /* 250 means width of each column */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 0 10px;
+  /* remove vertical spacing */
+  grid-auto-rows: 10px;
+}
+
+.image-list img {
+  width: 250px;
+  grid-row-end: span 2;
+}
